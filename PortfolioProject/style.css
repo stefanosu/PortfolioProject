@@ -1,0 +1,172 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6e6e6;
+  font-family: 'Dosis', sans-serif;
+  color: #404040;
+}
+
+img{
+  resize: 400px;
+}
+
+/*Site Flexbox*/
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin:0;
+}
+/* Header Styles */
+#header_container {
+  border-bottom: 2px solid #ffffff;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+.hero_image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header_title {
+  font-family: 'Mr Dafoe', cursive; 
+  font-size: 100px;
+  color: #333333;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub_line {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Navigation*/
+.nav_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 25px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: 1ae2ed;
+  width: 100%;
+}
+.nav_container a {
+    color: #333333;
+    padding: 15px 15px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav_container a:hover, a:active {
+    background-color: #ede3e7;
+}
+/*Main Content*/
+#main_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333333;
+}
+/* Avatar */
+.image_holder {
+  width: 100%;
+  text-align: center;
+}
+/*Welcome Paragraph */
+.about_me {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+}
+/* Featured Work */
+.featured_work {
+  width: 100%;
+  border-top: 1px solid #333333;
+  text-align: center;
+}
+/*Project Image Flexbox*/
+.work_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+.box_1 {
+  margin: 10px;
+}
+.box_2 {
+  margin: 10px;
+}
+.box_3 {
+  margin: 10px;
+}
+
+/*Media Queries*/
+
+/*Devices at 360px - Google Nexus 5*/
+@media screen and (max-width: 524px) {
+  .header_title {
+  font-family: 'Mr Dafoe', cursive; 
+  font-size: 50px;
+  width: 100%;
+  color: #333333;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  .sub_line {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  width: 100%;
+}
+.nav_container a {
+    width: 100%;
+    display: block;
+    color: #333333;
+    padding: 15px 15px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+.nav_container a:hover, a:active {
+    background-color: lightblue;
+}
+  
+}
+
+/*Add margins after max-width of 1024px*/
+@media screen and (min-width: 1024px) {
+  #container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
